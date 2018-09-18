@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+    <script type="text/javascript">
+
+    // Write a program that prints the numbers from 1 to 100. But for multiples of
+    // three print “Fizz” instead of the number and for the multiples of five print
+    // “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
+
+    let printThis;
+    for (let i = 1; i <= 100; i++) {
+      if (i % 3 == 0) {  // Checks if multiple of 3
+        printThis = 'Fizz';
+          if (i % 5 == 0) { // So it is multiple of 3, checks if also multiple of 5
+            printThis += 'Buzz'
+          }
+      } else if (i % 5 == 0){ // So not multiple of 3, checks if multiple of 5
+        printThis = 'Buzz';
+      } else {
+        printThis = i; // Not multiple of 3 or 5, just use number
+      }
+      console.log(printThis); // Print result
+    }
+
+    </script>
+
+
+  </head>
+  <body>
+
+    <h1>FizzBuzz - check console</h1>
+
+  </body>
+</html>
