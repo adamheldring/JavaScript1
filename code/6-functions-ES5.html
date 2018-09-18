@@ -2,8 +2,8 @@
 
   // Functions are a way to store a re-usable snippet of code in a block which can
   // be run later. For example, this function would print the current time when invoked:
-  const printCurrentTime = () => {
-    const currentTime = new Date()
+  function printCurrentTime() {
+    var currentTime = new Date()
     return currentTime.toLocaleTimeString()
   }
 
@@ -13,7 +13,7 @@
 
   // Task 2: Write a function which, when invoked, prints your name. Then invoke it twice.
 
-  const printName = (name) => {
+  function printName(name){
     console.log(name);
   }
   printName('Adam Heldring');
@@ -25,7 +25,7 @@
   // printGreeting("Bob") // This should print "Hello Bob"
   // printGreeting("Sue") // This should print "Hello Sue"
 
-  const printGreeting = (name) => {
+  function printGreeting(name) {
     console.log("Hello " + name);
   }
   printGreeting("Bob") // This should print "Hello Bob"
@@ -40,12 +40,12 @@
   // const second = multiply(100, 4)
   // console.log(second) // this should print "400"
 
-  const multiply = (a,b) => {
+  function multiply(a,b) {
     return a * b;
   }
 
-  const first = multiply(2, 2);
-  const second = multiply(100, 4);
+  var first = multiply(2, 2);
+  var second = multiply(100, 4);
   console.log(first, second);
 
 
@@ -54,7 +54,7 @@
   // function. It should print "Go for a run!"
   //
 
-  const warmEnough = (currentTemp) => {
+  function warmEnough(currentTemp) {
     if (currentTemp > 10) {
       return true;
     } else {
