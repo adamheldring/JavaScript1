@@ -55,11 +55,7 @@
   //
 
   function warmEnough(currentTemp) {
-    if (currentTemp > 10) {
-      return true;
-    } else {
-      return false;
-    }
+    return currentTemp > 10;
   }
 
   if (warmEnough(15)) {

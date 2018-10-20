@@ -12,15 +12,14 @@
 
     let printThis;
     for (let i = 1; i <= 100; i++) {
-      if (i % 3 == 0) {  // Checks if multiple of 3
+      if (i % 3 == 0 && i % 5 == 0) { // Checks if multiple of both 3 & 5
+        printThis = 'FizzBuzz';
+      } else if (i % 3 == 0) { // if not both, check if multiple of 3
         printThis = 'Fizz';
-          if (i % 5 == 0) { // So it is multiple of 3, checks if also multiple of 5
-            printThis += 'Buzz'
-          }
-      } else if (i % 5 == 0){ // So not multiple of 3, checks if multiple of 5
+      } else if (i % 5 == 0){ // if not multiple of 3, check if multiple of 5
         printThis = 'Buzz';
       } else {
-        printThis = i; // Not multiple of 3 or 5, just use number
+        printThis = i; // Not multiple of 3 or 5, just use number.
       }
       console.log(printThis); // Print result
     }
